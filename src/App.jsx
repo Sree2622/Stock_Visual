@@ -13,7 +13,7 @@ import {
 const API_KEY = "QNJA9IUTJJTYXGUD"; // Replace with your Alpha Vantage API key
 
 export default function App() {
-  const [symbol, setSymbol] = useState("AAPL");
+  const [symbol, setSymbol] = useState("IBM");
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -58,32 +58,38 @@ export default function App() {
   };
 return (
   <div className="min-h-screen bg-gradient-to-br from-[#1a0033] via-[#3b0099] to-[#00bcd4] p-8 font-mono flex flex-col items-center">
-    
-    {/* Title */}
-    <h1
-      className="text-5xl font-extrabold mb-6 text-center uppercase tracking-widest"
-      style={{
-        background: "linear-gradient(90deg, #00fff7, #ff00f7)",
-        WebkitBackgroundClip: "text",
-        WebkitTextFillColor: "transparent",
-        textShadow: "0 0 6px #00fff7, 0 0 14px #ff00f7",
-      }}
-    >
-      Financial Data Visualization Tool
-    </h1>
+   
 
-    {/* Subheading */}
-    <h2
-      className="text-3xl font-semibold italic tracking-wide mb-10 text-center"
-      style={{
-        background: "linear-gradient(90deg, #ff7ef0, #8a2be2)",
-        WebkitBackgroundClip: "text",
-        WebkitTextFillColor: "transparent",
-        textShadow: "0 0 6px #ff7ef0, 0 0 10px #8a2be2",
-      }}
-    >
-      {symbol} - Last 30 Days
-    </h2>
+
+	{/* Title */}
+	<h1
+	  className="text-5xl font-extrabold mb-6 text-center uppercase tracking-widest"
+	  style={{
+	    background: "linear-gradient(90deg, #00d4ff, #ff00a8)",
+	    WebkitBackgroundClip: "text",
+	    WebkitTextFillColor: "transparent",
+	    textShadow: "0 1px 2px rgba(0,0,0,0.25)", // subtle crisp shadow
+	    WebkitFontSmoothing: "antialiased",
+	    MozOsxFontSmoothing: "grayscale",
+	  }}
+	>
+	  Financial Data Visualization Tool
+	</h1>
+
+	{/* Subheading */}
+	<h2
+	  className="text-3xl font-semibold italic tracking-wide mb-10 text-center"
+	  style={{
+	    background: "linear-gradient(90deg, #ff6ec7, #6a5acd)",
+	    WebkitBackgroundClip: "text",
+	    WebkitTextFillColor: "transparent",
+	    textShadow: "0 1px 1px rgba(0,0,0,0.2)", // softer shadow
+	    WebkitFontSmoothing: "antialiased",
+	    MozOsxFontSmoothing: "grayscale",
+	  }}
+	>
+	  {symbol} - Last 30 Days
+	</h2>
 
     {/* Input and Button */}
     <div className="mb-10 w-full max-w-xl">
@@ -235,4 +241,3 @@ return (
 );
 
 }
-
