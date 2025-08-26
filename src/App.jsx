@@ -10,7 +10,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-const API_KEY = "demo"; // Replace with your Alpha Vantage API key
+const API_KEY = "QNJA9IUTJJTYXGUD"; // Replace with your Alpha Vantage API key
 
 export default function App() {
   const [symbol, setSymbol] = useState("AAPL");
