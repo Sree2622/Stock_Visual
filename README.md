@@ -1,15 +1,24 @@
-# React + Vite
+# Interactive Stock Visualization Tool
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend project to explore real-time and historical stock data with interactive charts.  
+Built using React and deployed on Netlify.
 
-Currently, two official plugins are available:
+## Features
+- Interactive charts for stock data
+- Modular React components
+- External stock market API integration
+- Responsive UI
+- Netlify deployment with GitHub CI/CD
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- React (Vite)
+- Charting library (Recharts / Chart.js)
+- Stock market API (e.g. Alpha Vantage, Yahoo Finance)
+- Netlify
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Stock_Visual
-# Stock_Visual
-# Stock_Visual
+## Setup
+```bash
+git clone https://github.com/your-username/stock-visualization-tool.git
+cd stock-visualization-tool
+npm install
+npm run dev
